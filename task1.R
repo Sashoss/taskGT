@@ -56,8 +56,8 @@ gmt_path <- "h.all.v2023.1.Hs.symbols.gmt"
 output_path <- "q1_output.gmt" #my output file
 
 
-mapping <- geneMap(gene_info_path)
-process_gmt_file(gmt_path, output_path, mapping)
+mapping <- geneMap(gene_info_path)#run gene symbol gene id mapping 
+gmtDataProcessing(gmt_path, output_path, mapping)#replace gene symbol with entrez id 
 
 
 
